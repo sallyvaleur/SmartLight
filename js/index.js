@@ -71,7 +71,7 @@ function conn(){
 	var deviceTouchArr = deviceTouch.split(",");
 	ConnDeviceId = deviceTouchArr[1];
 	bleDeviceName = deviceTouchArr[0];
-	//document.getElementById("debugDiv").innerHTML += "<br>Debug: <br>"+deviceTouchArr[0]+"<br>"+deviceTouchArr[1]; //for debug:
+	document.getElementById("debugDiv").innerHTML += "<br>Debug: <br>"+deviceTouchArr[0]+"<br>"+deviceTouchArr[1]; //for debug:
 	if(bleDeviceName  == "STUELAMPE")
 		test();
  }
@@ -84,10 +84,9 @@ function onError(reason)  {
 
 
 function test(){
-	window.location.href = 'indexlogin.html';
-	//var url='loginindex.html';	
-	openBrowser(url);
+	window.location.href = "https://placering.000webhostapp.com";
 }
+
 
 function openBrowser(url) {
    var target = '_blank';
@@ -95,4 +94,6 @@ function openBrowser(url) {
    var ref = cordova.InAppBrowser.open(url, target, options);
 }
 
-´
+
+
+
