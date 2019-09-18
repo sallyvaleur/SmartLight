@@ -84,9 +84,9 @@ function onError(reason)  {
 
 
 function test(){
-	window.location.href = "https://placering.000webhostapp.com";
+	var url='loginindex.html';	
+	openBrowser(url);
 }
-
 
 function openBrowser(url) {
    var target = '_blank';
