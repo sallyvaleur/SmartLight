@@ -84,8 +84,9 @@ function onError(reason)  {
 
 
 function test(){
-	var url='loginindex.html';	
-	openBrowser(url);
+	window.location.href = "loginindex.html";
+	//var url='loginindex.html';	
+	//openBrowser(url);
 }
 
 function openBrowser(url) {
