@@ -13,22 +13,33 @@
 	<body onload="onLoad()">
 	
 	<center>
+	<form>
+	
 	<div class="imgcontainer">
 		<img src="light.png">
-		</div>
+	</div>
 	
-		<h1>Smart Lights</h1>
+	<div id="test" class="container">
+	
+        <h1>SmartLight</h1><br />
+     
+		
 		
 		<ul id="bleDeviceList"> </ul> 
-		<br /><br /><br /><br /><br />
+		<br /><br /><br />
+		<br /><br />
 		<button id="refreshButton" onClick = "refreshDeviceList()">Refresh</button>
 		<br>
 		
 		<br><br>
 		<div id="debugDiv"></div>
 		<br>
+		
 		<button id ="testButton1" onClick = "test()">Login</button>	<br><br>
 		
-		</center>
+		
+	</div>
+	</form>
+	</center>
 	</body>
 </html>
