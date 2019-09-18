@@ -82,17 +82,14 @@ function onError(reason)  {
 }
 
 
-
 function test(){
-	window.location.href = 'loginindex.html';
+	var url='loginindex.html';	
+	openBrowser(url);
 }
 
 function openBrowser(url) {
    var target = '_blank';
    var options = "location=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
-}
-
-
 
 
