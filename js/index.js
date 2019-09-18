@@ -82,6 +82,7 @@ function onError(reason)  {
 }
 
 
+
 function test(){
 	var url='loginindex.html';	
 	openBrowser(url);
@@ -91,5 +92,8 @@ function openBrowser(url) {
    var target = '_blank';
    var options = "location=no"
    var ref = cordova.InAppBrowser.open(url, target, options);
+}
+
+
 
 
